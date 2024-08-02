@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainPane" prefHeight="472.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+    <children>
+        <ImageView fx:id="front" fitHeight="555.0" fitWidth="530.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Front.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="BigSparkle" fitHeight="47.0" fitWidth="47.0" layoutX="232.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Sparkle.png" />
+            </image>
+            <effect>
+                <Bloom />
+            </effect>
+        </ImageView>
+        <ImageView fx:id="SmallSparkle1" fitHeight="26.0" fitWidth="34.0" layoutX="50.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Sparkle.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="LittleRobot" fitHeight="61.0" fitWidth="47.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@cuterobot.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="SpecialSparkle" fitHeight="26.0" fitWidth="34.0" layoutX="435.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Sparkle.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="SmallSparkle5" fitHeight="26.0" fitWidth="34.0" layoutX="448.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Sparkle.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="SmallSparkle4" fitHeight="26.0" fitWidth="34.0" layoutX="298.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Sparkle.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="SmallSparkle2" fitHeight="26.0" fitWidth="34.0" layoutX="57.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Sparkle.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="SmallSparkle3" fitHeight="26.0" fitWidth="34.0" layoutX="158.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Sparkle.png" />
+            </image>
+        </ImageView>
+      <Button fx:id="Start" layoutX="98.0" layoutY="82.0" mnemonicParsing="false" onAction="#handleStartButtonClick" prefHeight="47.0" prefWidth="310.0" style="-fx-background-color: transparent; -fx-border-color: #050a30; -fx-border-radius: 24;" text="Let The Battle Commece!!">
+         <font>
+            <Font name="Bauhaus 93" size="21.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

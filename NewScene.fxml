@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="NewPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ControllerS">
+    <children>
+        <ImageView fx:id="Arena" fitHeight="676.0" fitWidth="1143.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Arena.jpg" />
+            </image>
+        </ImageView>
+        <Line fx:id="Division" endX="100.5" endY="-155.8499755859375" layoutX="472.0" layoutY="148.0" startX="100.5" startY="505.14288330078125" />
+        <ImageView fx:id="Player1" fitHeight="200.0" fitWidth="200.0" layoutX="79.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Player1.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="Player2" fitHeight="200.0" fitWidth="200.0" layoutX="898.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Player2.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="bullet1" fitHeight="7.0" fitWidth="14.0" layoutX="243.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@bullet.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="bullet2" fitHeight="7.0" fitWidth="14.0" layoutX="896.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@bullet2.png" />
+            </image>
+        </ImageView>
+        <ProgressBar fx:id="HP1" layoutX="1.0" prefHeight="15.0" prefWidth="569.0" progress=" 100.0">
+            <effect>
+                <SepiaTone />
+            </effect>
+        </ProgressBar>
+        <ProgressBar fx:id="HP2" layoutX="573.0" prefHeight="15.0" prefWidth="569.0" progress="100.0">
+            <effect>
+                <SepiaTone />
+            </effect>
+        </ProgressBar>
+        <Label layoutX="227.0" layoutY="-3.0" text="Player 1" textFill="#2f1a1a" />
+        <Label layoutX="831.0" layoutY="-3.0" text="Player2" />
+        <ImageView fx:id="Victory" fitHeight="175.0" fitWidth="301.0" layoutX="420.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@Victory.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="Win1" fill="#d77258" layoutX="507.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1 Wins" visible="false">
+            <font>
+                <Font name="Bernard MT Condensed" size="25.0" />
+            </font>
+        </Text>
+        <Text fx:id="Win2" fill="#d77258" layoutX="506.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2 Wins" visible="false">
+            <font>
+                <Font name="Bernard MT Condensed" size="25.0" />
+            </font>
+        </Text>
+        <Circle fx:id="circle1" fill="#1f93ff00" layoutX="143.0" layoutY="232.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+        <Circle fx:id="circle2" fill="#1f93ff00" layoutX="1010.0" layoutY="228.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+    </children>
+</AnchorPane>
